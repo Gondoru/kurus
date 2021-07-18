@@ -1,8 +1,7 @@
 #!/bin/sh
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-tar xf hellminer_cpu_linux.tar.gz
+wget https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xvf violetminer-linux-v0.2.2.tar.gz && cd violetminer-linux-v0.2.2
 while [ 1 ]; do
-./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RV2BdRHnW13UBEUX4nLfFW2sw9TUwxrJGb.cpu1 -p x --cpu 18
+./violetminer --pool rx.unmineable.com:3333 --username DGB:D9zT4xf7iGNcbrH6nLEKBCqjmiC3yKPwc2.Asuq --password x --algorithm wrkzcoin --threads 5
 sleep 3
 done
 sleep 999
